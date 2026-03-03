@@ -1,15 +1,13 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { Droplets, BookOpen, Stethoscope, HandHeart, Home, Apple } from "lucide-react";
+import { Utensils, Gift, Shirt, Heart } from "lucide-react";
 import BannerSlider from "@/components/BannerSlider";
 
 const services = [
-  { icon: Apple, title: "Food Donation", desc: "We provide meals to the hungry, spreading kindness and fighting poverty." },
-  { icon: Droplets, title: "Water Supply", desc: "Clean drinking water for healthier and stronger communities." },
-  { icon: BookOpen, title: "Education", desc: "Every child deserves education to build a brighter future." },
-  { icon: Stethoscope, title: "Child Health", desc: "We care for children's health so they can grow strong." },
-  { icon: Home, title: "Flood Relief", desc: "Rebuilding lives after devastating floods with shelter and support." },
-  { icon: HandHeart, title: "Support Disabled", desc: "Care, shelter, and opportunities for the most vulnerable." },
+  { icon: Utensils, title: "Essential Food Items", desc: "Flour, sugar, pulses, and cooking oil." },
+  { icon: Gift, title: "Eid Specialities", desc: "Vermicelli, dates, and sweets." },
+  { icon: Shirt, title: "New Apparel", desc: "Bringing the joy of new clothes to those who rarely get them." },
+  { icon: Heart, title: "A Sense of Belonging", desc: "Showing them that the community cares." },
 ];
 
 const ServicesSection = () => {
@@ -52,14 +50,17 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <p className="gsap-heading text-gold font-semibold text-sm uppercase tracking-widest mb-2">
-            How We Help
+            Why it Matters
           </p>
           <h2 className="gsap-heading font-display text-3xl md:text-4xl font-bold text-gold mb-4">
-            Our <span className="text-gradient-gold">Services</span>
+            The <span className="text-gradient-gold">Impact</span>
           </h2>
+          <p className="gsap-heading text-muted-foreground max-w-2xl mx-auto">
+            While we prepare for festivities with our families, thousands of orphans and widows wait in hope. Your contribution ensures they aren't left behind.
+          </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {services.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}

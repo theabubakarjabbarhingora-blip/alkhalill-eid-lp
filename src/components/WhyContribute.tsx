@@ -61,7 +61,7 @@ const WhyContribute = () => {
               <span className="text-secondary">(Rs. 5,500)</span>
             </h3>
             <ul className="space-y-2">
-              {["Essential Food Items: Flour, sugar, pulses, and cooking oil.", "Eid Specialities: Vermicelli, dates, and sweets.", "New Apparel: Bringing the joy of new clothes.", "A Sense of Belonging: Showing them that the community cares."].map(
+              {["Essential Food Items: Flour, sugar, pulses, and cooking oil.", "Eid Specialities: Vermicelli, dates, and sweets.", "New Apparel: Bringing the joy of new clothes to those who rarely get them.", "A Sense of Belonging: Showing them that the community cares."].map(
                 (item) => (
                   <li key={item} className="gsap-list-item flex items-center gap-3 text-foreground">
                     <span className="w-2 h-2 rounded-full bg-secondary shrink-0" />
@@ -76,7 +76,7 @@ const WhyContribute = () => {
             <div className="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500 group">
               <img
                 src={hero1}
-                alt="Al-Khalil Welfare volunteers preparing Iftar boxes"
+                alt="Al-Khalil Welfare volunteers preparing Eid packages"
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />

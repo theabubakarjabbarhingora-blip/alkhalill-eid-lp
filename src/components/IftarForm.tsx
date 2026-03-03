@@ -369,7 +369,7 @@ Please share payment details or confirm my pledge.`;
       setSuccess(true);
       toast({
         title: "Form submitted",
-        description: "We have received your Iftar donation details.",
+        description: "We have received your Eid Package donation details.",
       });
     } catch (error) {
       toast({
