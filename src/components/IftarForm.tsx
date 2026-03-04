@@ -637,41 +637,6 @@ Please share payment details or confirm my pledge.`;
                               <span className="value">{boxes}</span>
                             </div>
 
-                            <div className="summary-row">
-                              <span className="label">Bank / <span className="ur-text">بینک</span></span>
-                              <span className="value">Meezan Bank</span>
-                            </div>
-                            <div className="summary-row">
-                              <span className="label">Title / <span className="ur-text">عنوان</span></span>
-                              <span className="value" style={{ textAlign: 'right', maxWidth: '60%' }}>Maahad ul Khalil Al Islami</span>
-                            </div>
-                            <div className="summary-row">
-                              <span className="label">Account No / <span className="ur-text">اکاؤنٹ نمبر</span></span>
-                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                <span className="value" style={{ fontFamily: 'monospace' }}>01850112692200</span>
-                                <button 
-                                  type="button" 
-                                  style={{ fontSize: '11px', color: copiedKey === "num_sm" ? '#10B981' : '#f8a81a', background: 'none', border: '1px solid currentColor', borderRadius: '4px', padding: '1px 6px', cursor: 'pointer', transition: 'all 0.2s' }} 
-                                  onClick={() => copyText("01850112692200", "num_sm")}
-                                >
-                                  {copiedKey === "num_sm" ? "✓" : "Copy"}
-                                </button>
-                              </div>
-                            </div>
-                            <div className="summary-row">
-                              <span className="label">IBAN / <span className="ur-text">آئی بی این</span></span>
-                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                <span className="value" style={{ fontFamily: 'monospace', fontSize: '13px' }}>PK30MEZN0001850112692200</span>
-                                <button 
-                                  type="button" 
-                                  style={{ fontSize: '11px', color: copiedKey === "iban_sm" ? '#10B981' : '#f8a81a', background: 'none', border: '1px solid currentColor', borderRadius: '4px', padding: '1px 6px', cursor: 'pointer', transition: 'all 0.2s' }} 
-                                  onClick={() => copyText("PK30MEZN0001850112692200", "iban_sm")}
-                                >
-                                  {copiedKey === "iban_sm" ? "✓" : "Copy"}
-                                </button>
-                              </div>
-                            </div>
-
                             <div className="summary-total">
                               <span className="label">Total / <span className="ur-text">کل رقم</span></span>
                               <span className="value">Rs. {amount}</span>
